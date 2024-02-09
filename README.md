@@ -6,6 +6,11 @@ This is a software for law and social security advisory firms in Brazil.
 
 The reasons for developing this software include solving a real-world problem for an office, practicing and improving software development abilities, and expanding my developer portfolio.
 
+## CLI Commands
+
+- Test: flutter test --coverage
+- Show coverage on console: test_cov_console
+
 # About Licence
 
 This software is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND).
