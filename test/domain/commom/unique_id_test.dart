@@ -20,5 +20,18 @@ void main() {
       const uuid = 'f47ac10b-58cc-4372-a567-0e02b2c3d479z';
       expect(() => UniqueId(uuid), throwsA(isA<AssertionError>()));
     });
+
+    test('UniqueId must be equatable', () {
+      final uniqueId1 = UniqueId();
+      final uniqueId2 = UniqueId();
+      final uniqueId3 = UniqueId('f47ac10b-58cc-4372-a567-0e02b2c3d479');
+      final uniqueId4 = UniqueId('f47ac10b-58cc-4372-a567-0e02b2c3d479');
+      final uniqueId5 = UniqueId('f47ac10b-58cc-4372-a567-0e02b2c3d478');
+
+      expect(uniqueId1 == uniqueId2, false);
+      expect(uniqueId1 == uniqueId3, false);
+      expect(uniqueId3 == uniqueId4, true);
+      expect(uniqueId3 == uniqueId5, false);
+    });
   });
 }
