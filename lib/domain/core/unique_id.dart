@@ -1,4 +1,4 @@
-import 'package:atoprev/core/value_object.dart';
+import 'package:atoprev/domain/core/value_object.dart';
 import 'package:atoprev/helpers/is_uuid_v4.dart';
 import 'package:uuid/uuid.dart';
 
