@@ -13,5 +13,15 @@ void main() {
       const String cpf = 'AS212312';
       expect(() => Cpf(cpf), throwsAssertionError);
     });
+
+    test('Cpf must be equatable', () {
+      const cpf = '52768348066';
+      var cpf1 = Cpf(cpf);
+      var cpf2 = Cpf(cpf);
+      var cpf3 = Cpf('12345678901');
+
+      expect(cpf1 == cpf2, true);
+      expect(cpf1 == cpf3, false);
+    });
   });
 }

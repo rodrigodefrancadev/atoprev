@@ -37,6 +37,7 @@ dependencies:
   uuid: ^4.3.3
   email_validator: ^2.1.17
   cpf_cnpj_validator: ^2.0.0
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
