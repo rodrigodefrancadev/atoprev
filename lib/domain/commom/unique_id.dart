@@ -1,5 +1,5 @@
 import 'package:atoprev/domain/commom/value_object.dart';
-import 'package:atoprev/helpers/is_uuid_v4.dart';
+import 'package:atoprev/domain/commom/helpers/is_uuid_v4.dart';
 import 'package:uuid/uuid.dart';
 
 class UniqueId extends ValueObject<String> {
