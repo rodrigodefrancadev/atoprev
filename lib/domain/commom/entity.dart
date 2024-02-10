@@ -1,4 +1,4 @@
-import 'package:atoprev/domain/core/unique_id.dart';
+import 'package:atoprev/domain/commom/unique_id.dart';
 
 abstract class Entity {
   final UniqueId id;
