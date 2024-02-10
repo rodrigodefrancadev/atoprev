@@ -1,4 +1,4 @@
-import 'package:atoprev/core/value_object.dart';
+import 'package:atoprev/domain/commom/value_object.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
