@@ -11,7 +11,7 @@ The reasons for developing this software include solving a real-world problem fo
 - Test: flutter test --coverage
 - Show coverage on console: test_cov_console
 
-# About Licence
+## About Licence
 
 This software is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND).
 This code is public, so anybody can read and analyze it, run it in their development environment, and display it for academic purposes while giving the creator proper credit. However, it cannot be deployed for either personal or commercial objectives. Feel free to contribute, post pull requests, or make ideas.
