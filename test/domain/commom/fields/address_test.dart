@@ -186,5 +186,48 @@ void main() {
         throwsAssertionError,
       );
     });
+
+    test('Address must be equatable', () {
+      var address1 = const Address(
+        street: 'Rua 1',
+        number: '123',
+        neighborhood: 'Bairro 1',
+        complement: 'Complemento',
+        city: 'São Luís',
+        state: 'MA',
+        zipCode: '12345678',
+      );
+      var address2 = const Address(
+        street: 'Rua 1',
+        number: '123',
+        neighborhood: 'Bairro 1',
+        complement: 'Complemento',
+        city: 'São Luís',
+        state: 'MA',
+        zipCode: '12345678',
+      );
+      var address3 = const Address(
+        street: 'Rua 2',
+        number: '123',
+        neighborhood: 'Bairro 1',
+        complement: 'Complemento',
+        city: 'São Luís',
+        state: 'MA',
+        zipCode: '12345678',
+      );
+      var address4 = const Address(
+        street: 'Rua 1',
+        number: '123',
+        neighborhood: 'Bairro 1',
+        complement: 'Complemento',
+        city: 'São Luís',
+        state: 'MA',
+        zipCode: '12345678',
+      );
+
+      expect(address1 == address2, true);
+      expect(address1 == address3, false);
+      expect(address1 == address4, true);
+    });
   });
 }
