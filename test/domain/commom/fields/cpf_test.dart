@@ -18,7 +18,7 @@ void main() {
       const cpf = '52768348066';
       var cpf1 = Cpf(cpf);
       var cpf2 = Cpf(cpf);
-      var cpf3 = Cpf('12345678901');
+      var cpf3 = Cpf('41148197036');
 
       expect(cpf1 == cpf2, true);
       expect(cpf1 == cpf3, false);
