@@ -16,6 +16,38 @@ void main() {
       expect(meuGovCredentials.emailPassword, emailPassword);
     });
 
+    test('meuGovPassword must have at least 6 characters', () {
+      const String meuGovPassword = '12345';
+      expect(
+        () => CostumerCredentials(meuGovPassword: meuGovPassword),
+        throwsAssertionError,
+      );
+    });
+
+    test('meuGovPassword must have at most 100 characters', () {
+      String meuGovPassword = '1' * 101;
+      expect(
+        () => CostumerCredentials(meuGovPassword: meuGovPassword),
+        throwsAssertionError,
+      );
+    });
+
+    test('emailPassword must have at least 6 characters', () {
+      const String emailPassword = '12345';
+      expect(
+        () => CostumerCredentials(emailPassword: emailPassword),
+        throwsAssertionError,
+      );
+    });
+
+    test('emailPassword must have at most 100 characters', () {
+      String emailPassword = '1' * 101;
+      expect(
+        () => CostumerCredentials(emailPassword: emailPassword),
+        throwsAssertionError,
+      );
+    });
+
     test('CostumerCredentials must be equatable', () {
       const String meuGovPassword = '123456';
       const String emailPassword = '123456';
